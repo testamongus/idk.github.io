@@ -204,6 +204,7 @@ const GUIComponent = props => {
                         <Alerts className={styles.alertsContainer} />
                     ) : null}
                 </StageWrapper>
+                {alwaysEnabledModals}
                 {usernameModalVisible && <TWUsernameModal />}
                 {settingsModalVisible && <TWSettingsModal />}
                 {extensionsManagerModalVisible && <ExtensionManagerModal />}
@@ -214,6 +215,7 @@ const GUIComponent = props => {
                 dir={isRtl ? 'rtl' : 'ltr'}
                 {...componentProps}
             >
+                {alwaysEnabledModals}
                 {usernameModalVisible && <TWUsernameModal />}
                 {settingsModalVisible && <TWSettingsModal />}
                 {extensionsManagerModalVisible && <ExtensionManagerModal />}
