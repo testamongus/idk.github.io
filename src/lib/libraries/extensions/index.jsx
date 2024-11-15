@@ -231,15 +231,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Screensharing',
-        extensionId: 'https://editor.snail-ide.com/screen-sharing.js',
-        iconURL: 'https://editor.snail-ide.com/Screensharing.png', // please forgive me the text is slightly offcenter
-        collaborator: 'pooiod7',
-        tags: ['penguinmod'],
-        description: 'Share your screen and get the current frame as an image. (replaced by VideoSharing)',
-        featured: false // This is actually an unfinished version of "VideoSharing" (kept to prevent old projects from braking)
-    },
-    {
         name: 'VideoSharing',
         extensionId: 'https://editor.snail-ide.com/VideoSharing.js',
         iconURL: VideoSharing,
