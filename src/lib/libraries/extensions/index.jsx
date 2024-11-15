@@ -3,6 +3,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import VideoSharing from './VidShare/VideoSharing.svg';
+import SuperStorage from './SuperStorage/SuperStorage.svg';
 import NoahgptThumb from './noahgpt/costume1.svg';
 import typescriptIcon from './snail-ide/typescript.svg';
 import twGalleryIcon from './snail-ide/turbowarpgallery.svg';
@@ -10,7 +11,7 @@ import pmGalleryIcon from './snail-ide/penguinmodgallery.svg';
 import musicIconURL from './music/music.png';
 import roku from './roku/roku.png';
 import share from './share/share.svg';
-import cloudstorageIconURL from './cloudstorage/costume1.svg';
+import cloudstorageIconURL from './cloudstorage/CloudStorage.svg';
 import pythonIcon from './python/py.svg';
 import extCreateIcon from './ext-create/logo.svg';
 import extCreateInset from './ext-create/inset.svg';
@@ -227,15 +228,6 @@ const menuItems = [
         collaborator: 'SharkPool',
         tags: ['penguinmod'],
         description: 'Do many things via the Scratch API; you can even fetch cloud data from projects!',
-        featured: true
-    },
-    {
-        name: 'Screensharing',
-        extensionId: 'https://editor.snail-ide.com/screen-sharing.js',
-        iconURL: 'https://editor.snail-ide.com/Screensharing.png', // please forgive me the text is slightly offcenter
-        collaborator: 'pooiod7',
-        tags: ['penguinmod'],
-        description: 'Share your screen and get the current frame as a image.',
         featured: true
     },
     {
@@ -541,9 +533,18 @@ const menuItems = [
         name: 'Cloud Storage',
         extensionId: 'https://editor.snail-ide.com/cloudstorage.js',
         collaborator: 'pooiod7',
-        iconURL: cloudstorageIconURL, // this needs to be redone soon
+        iconURL: cloudstorageIconURL,
         tags: ['penguinmod'],
         description: 'Store data in a database, similar to Storage and Better Storage, but powered by a Snap! extension.',
+        featured: true
+    },
+    {
+        name: 'SuperStorage',
+        extensionId: 'https://editor.snail-ide.com/SuperStorage.js',
+        iconURL: SuperStorage,
+        tags: ['penguinmod'],
+        description: 'Store and retrieve data locally on device or remotely on a server.',
+        collaborator: 'pooiod7',
         featured: true
     },
     {
